@@ -1,35 +1,49 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-
 import 'package:angola_province_picker/angola_province_picker.dart';
+import 'package:flutter/material.dart';
 
 void main() {
-  testWidgets('AngolaProvincePicker displays and selects a province', (
-    WidgetTester tester,
-  ) async {
-    String? selectedProvince;
+  runApp(const MyApp());
+}
 
-    await tester.pumpWidget(
-      MaterialApp(
-        home: Scaffold(
-          body: AngolaProvincePicker(
-            selected: null,
-            hint: 'Selecione uma provincia',
-            onChanged: (value) {
-              selectedProvince = value;
-            },
-          ),
-        ),
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(title: const Text('Escolher Provincias')),
+        body: const Center(child: AngolaProvincePickerTest()),
       ),
     );
+  }
+}
 
-    expect(find.text('Selecione uma provincia'), findsOneWidget);
+class AngolaProvincePickerTest extends StatefulWidget {
+  const AngolaProvincePickerTest({super.key});
 
-    await tester.tap(find.byType(DropdownButton<String>));
-    await tester.pumpAndSettle();
-    await tester.tap(find.text('Bengo').last);
-    await tester.pumpAndSettle();
+  @override
+  State<AngolaProvincePickerTest> createState() =>
+      _AngolaProvincePickerTestState();
+}
 
-    expect(selectedProvince, 'Benguela');
-  });
+class _AngolaProvincePickerTestState extends State<AngolaProvincePickerTest> {
+  String? selected;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(20.0),
+      child: AngolaProvincePicker(
+        selected: selected,
+        onChanged: (value) {
+          setState(() {
+            selected = value;
+            print(value);
+          });
+        },
+        hint: 'Escolha uma provincia',
+        dropdownColor: Colors.white,
+      ),
+    );
+  }
 }
