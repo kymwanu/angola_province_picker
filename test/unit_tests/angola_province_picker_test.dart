@@ -30,6 +30,6 @@ void main() {
     await tester.tap(find.text('Bengo').last);
     await tester.pumpAndSettle();
 
-    expect(selectedProvince, 'Benguela');
+    expect(selectedProvince, 'Bengo');
   });
 }

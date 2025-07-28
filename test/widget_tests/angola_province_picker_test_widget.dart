@@ -38,7 +38,6 @@ class _AngolaProvincePickerTestState extends State<AngolaProvincePickerTest> {
         onChanged: (value) {
           setState(() {
             selected = value;
-            print(value);
           });
         },
         hint: 'Escolha uma provincia',
