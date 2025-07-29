@@ -12,21 +12,22 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Escolher Provincias')),
-        body: const Center(child: AngolaProvincePickerTest()),
+        body: const Center(child: AngolaProvincePickerTestWidget()),
       ),
     );
   }
 }
 
-class AngolaProvincePickerTest extends StatefulWidget {
-  const AngolaProvincePickerTest({super.key});
+class AngolaProvincePickerTestWidget extends StatefulWidget {
+  const AngolaProvincePickerTestWidget({super.key});
 
   @override
-  State<AngolaProvincePickerTest> createState() =>
-      _AngolaProvincePickerTestState();
+  State<AngolaProvincePickerTestWidget> createState() =>
+      _AngolaProvincePickerTestWidgetState();
 }
 
-class _AngolaProvincePickerTestState extends State<AngolaProvincePickerTest> {
+class _AngolaProvincePickerTestWidgetState
+    extends State<AngolaProvincePickerTestWidget> {
   String? selected;
 
   @override
