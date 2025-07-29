@@ -31,4 +31,4 @@
 library;
 
 export 'src/provinces.dart';
-export 'src/widgets/province_picker.dart';
+export 'src/widgets/material_province_picker.dart';
