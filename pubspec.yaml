@@ -1,7 +1,9 @@
 name: angola_province_picker
-description: "Um pacote Flutter para selecionar provincias de Angola"
-version: 1.0.0
-homepage: "https://github.com/kymwanu/angola_province_picker"
+description: "Um pacote Flutter para selecionar províncias e municípios de Angola com suporte a Material e Cupertino"
+
+version: 1.1.0
+homepage: https://github.com/kymwanu/angola_province_picker
+repository: https://github.com/kymwanu/angola_province_picker
 
 environment:
   sdk: ^3.8.1

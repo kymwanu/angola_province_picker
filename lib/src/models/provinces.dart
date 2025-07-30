@@ -1,23 +1,21 @@
+/// Lista com os nomes das 18 províncias de Angola.
 const List<String> angolaProvinces = [
   "Bengo",
   "Benguela",
   "Bié",
   "Cabinda",
-  "Cuando",
-  "Cubango",
+  "Cuando Cubango",
   "Cuanza Norte",
   "Cuanza Sul",
   "Cunene",
   "Huambo",
   "Huila",
-  "Icolo e Bengo",
   "Luanda",
   "Lunda Norte",
   "Lunda Sul",
   "Malanje",
   "Moxico",
-  "Moxico Leste",
   "Namibe",
   "Uige",
-  "Zaire"
+  "Zaire",
 ];
