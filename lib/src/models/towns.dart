@@ -1,3 +1,4 @@
+/// Lista com os nomes dos municipios de Angola.
 const Map<String, List<String>> angolaTowns = {
   "Bengo": [
     "Ambriz",
