@@ -24,6 +24,12 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 - Adicionados estilos com borda nos `DropdownButtonFormField` para integração mais natural com formulários.
 - Código organizado e formatado com `dart format`.
 
+
+## [1.1.2] - 2025-07-30
+### Corrigido
+- Corrigido pubspec.yaml (URLs, environment, lints)
+- Formataçao dos ficheiros cupertino baseados em Dart 
+
 ---
 
 ## [1.0.0] - 2025-07-28
