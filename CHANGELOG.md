@@ -14,9 +14,11 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 - Exemplo completo com alternância entre Material e Cupertino.
 - Campo `icon` e `dropdownColor` no `CupertinoProvincePicker`.
 
+## [1.1.1] - 2025-07-29
 ### Corrigido
-- Comentários de documentação (`dartdoc`) adicionados a mais de 90% da API pública.
-- `debugShowCheckedModeBanner` removido do exemplo.
+- Corrigido pubspec.yaml (URLs, environment, lints)
+- Adicionado diretório `example/`
+- Corrigido erro de exportações faltantes
 
 ### Melhorado
 - Adicionados estilos com borda nos `DropdownButtonFormField` para integração mais natural com formulários.
