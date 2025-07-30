@@ -34,9 +34,8 @@ class CupertinoTownPicker extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<String> municipios = angolaTowns[province] ?? [];
-    final int initialIndex = selected != null
-        ? municipios.indexOf(selected!)
-        : 0;
+    final int initialIndex =
+        selected != null ? municipios.indexOf(selected!) : 0;
 
     return GestureDetector(
       onTap: () {

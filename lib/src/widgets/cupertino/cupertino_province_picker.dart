@@ -37,9 +37,8 @@ class CupertinoProvincePicker extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final int initialIndex = selected != null
-        ? angolaProvinces.indexOf(selected!)
-        : 0;
+    final int initialIndex =
+        selected != null ? angolaProvinces.indexOf(selected!) : 0;
 
     return GestureDetector(
       onTap: () {
@@ -60,8 +59,7 @@ class CupertinoProvincePicker extends StatelessWidget {
                   .map(
                     (e) => Text(
                       e,
-                      style:
-                          style ??
+                      style: style ??
                           const TextStyle(color: Colors.black, fontSize: 16),
                     ),
                   )
@@ -82,12 +80,10 @@ class CupertinoProvincePicker extends StatelessWidget {
             Expanded(
               child: Text(
                 selected ?? hint ?? 'Selecionar uma província',
-                style:
-                    style ??
+                style: style ??
                     TextStyle(
                       fontSize: 16,
-                      color:
-                          Theme.of(context).textTheme.bodyLarge?.color ??
+                      color: Theme.of(context).textTheme.bodyLarge?.color ??
                           Colors.black,
                     ),
                 overflow: TextOverflow.ellipsis,

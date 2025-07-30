@@ -23,7 +23,7 @@ Adicione ao seu `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  angola_province_picker: ^1.1.0
+  angola_province_picker: ^1.1.1
 
 
 
